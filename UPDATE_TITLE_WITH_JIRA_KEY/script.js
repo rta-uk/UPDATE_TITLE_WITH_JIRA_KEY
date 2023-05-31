@@ -4,7 +4,7 @@ const match = pageSource.match(pattern);
 const jiraKey = match ? match[0] : null;
 let updatedTitle = jiraKey;
 
-function updateTitleWithjiraKey(updatedTitle) {
+function updateTitleWithJiraKey(updatedTitle) {
 	const titleElement = document.querySelector('title');
 	const source = document.documentElement.innerHTML;
 	const regex = new RegExp(updatedTitle, 'i');
@@ -15,4 +15,4 @@ function updateTitleWithjiraKey(updatedTitle) {
 	}
   }
 
-  updateTitleWithjiraKey(updatedTitle)
+  updateTitleWithJiraKey(updatedTitle)
